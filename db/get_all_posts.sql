@@ -1,0 +1,1 @@
+SELECT p.id, u.username, u.profile_pic AS author_id
