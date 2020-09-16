@@ -1,1 +1,4 @@
-SELECT p.id, u.username, u.profile_pic AS author_id
+SELECT  p.author_id, p.title, p.img, p.content, u.username, u.profile_pic
+FROM posts p
+JOIN users u ON p.author_id = u.id
+WHERE u.id = $1;
